@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: #e8eaf1;
+  background: #080a0f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --bg: #080a0f;
+  --bg-raised: #0d1017;
+  --panel: #0e1119;
+  --line: rgba(215, 225, 255, 0.1);
+  --line-strong: rgba(215, 225, 255, 0.17);
+  --text: #e8eaf1;
+  --muted: #9a9eae;
+  --faint: #696e7d;
+  --blue: #79a8ff;
+  --blue-bright: #91b6ff;
+  --violet: #9d8aff;
+  --content-width: 1160px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 82% 7%, rgba(52, 70, 125, 0.08), transparent 31rem),
+    var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+button,
+input,
+textarea {
+  font-size: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+}
+
+::selection {
+  color: #fff;
+  background: rgba(96, 139, 255, 0.45);
+}
+
+:focus-visible {
+  outline: 2px solid var(--blue-bright);
+  outline-offset: 4px;
+}
+
+#root {
+  min-height: 100vh;
+  overflow: clip;
+}
