@@ -1,6 +1,6 @@
 import { Footer } from './components/Footer.jsx'
 import { Navbar } from './components/Navbar.jsx'
-import { AdminPlaceholder } from './admin/AdminPlaceholder.jsx'
+import { AdminApp } from './admin/AdminApp.jsx'
 import { About } from './sections/About.jsx'
 import { Blog } from './sections/Blog.jsx'
 import { Contact } from './sections/Contact.jsx'
@@ -15,7 +15,7 @@ function App() {
   const isAdminRoute = pathname === '/admin' || pathname.startsWith('/admin/')
 
   if (isAdminRoute) {
-    return <AdminPlaceholder />
+    return <AdminApp pathname={pathname} />
   }
 
   return (
